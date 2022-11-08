@@ -23,6 +23,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+
 }
 
 header {
@@ -43,6 +44,7 @@ nav {
     width: 60%;
     font-size: 1.2rem;
     opacity: 50%;
+    font-weight: bold;
 
 }
 
@@ -105,10 +107,11 @@ a:hover {
 
 .headerCable {
     position: absolute;
-    right: 25rem;
-    top: 5rem;
-    max-height: 35vh;
-    width: 20vw;
+    top: 4.8rem;
+    right: 37rem;
+    max-height: 30vh;
+    width: 14vw;
+    /* border: 2px solid red; */
 
 }
 
@@ -138,7 +141,7 @@ a:hover {
 }
 
 .quienesomos {
-    min-height: 100vh;
+    min-height: 80vh;
     background: linear-gradient(180deg, #F7F7F7 81.25%, #C0C0C0 100%);
     display: flex;
     flex-direction: column;
@@ -149,7 +152,7 @@ a:hover {
 }
 
 .quienesomos h2 {
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-weight: 400;
     font-size: 4rem;
     line-height: 98px;
@@ -176,15 +179,40 @@ a:hover {
 
 .quehacemos {
     padding-top: 5rem;
-    min-height: 150vh;
+    min-height: 100vh;
     width: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(3, 1fr);
-    background-color: var(--white-dark);
+    /* background-color: var(--white-dark); */
+
+
+    background-image: url("./img/fonQuehacemos.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+
+
 
 }
+
+/* .containerQuehacemos {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.quehacemosImagen {
+    position: relative;
+    left: -30rem;
+    top: 12rem;
+    z-index: 0;
+    opacity: 50%;
+
+} */
 
 .quehacemos h4 {
     font-family: 'Roboto';
@@ -233,6 +261,7 @@ a:hover {
     margin-left: 4rem;
 }
 
+
 .div4 {
     grid-area: 2 / 1 / 6 / 2;
     display: flex;
@@ -262,11 +291,14 @@ a:hover {
 }
 
 .experiencias {
-    min-height: 70vh;
+    min-height: 90vh;
     width: 100%;
     display: flex;
     padding: 6rem 3rem 6rem 3rem;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    background-image: url('./img//Experiencia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 
 }
 
@@ -280,8 +312,8 @@ a:hover {
 .div7 p {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: bold;
+    font-size: 2.5rem;
     line-height: 72px;
     letter-spacing: -0.015em;
     color: #3F3F3F;
@@ -408,13 +440,9 @@ a:hover {
         height: 25vh;
     }
 
-    .headerCable {
 
-        right: 15rem;
-        top: 6rem;
-        max-height: 20vw;
-        width: 15vh;
-    }
+
+
 
     .quehacemos {
         grid-template-columns: repeat(3, 1fr);
@@ -473,11 +501,13 @@ a:hover {
     .div15 {
         flex: 1;
         background-color: black;
+        border:1px solid red;
     }
 
     .div16 {
         flex: 1;
         background-color: white;
+        border:2px solid blue;
     }
 
 }
@@ -850,14 +880,10 @@ a:hover {
 
 
 
-
-
-
-
 .wrapper {
 
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 550px;
     background: white;
     margin: auto;
     position: relative;
