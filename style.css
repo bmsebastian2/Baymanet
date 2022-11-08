@@ -906,6 +906,16 @@ a:hover {
     background-size: 100%;
 }
 
+.wrapper .container .top3 {
+    height: 80%;
+    width: 100%;
+    background: url(/img/redes.png) no-repeat center center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
 .wrapper .container .bottom {
     width: 200%;
     height: 20%;
