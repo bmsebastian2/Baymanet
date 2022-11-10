@@ -617,11 +617,13 @@ hr {
     .quienesomos p {
 
         margin: 0.5rem;
+        line-height: 35px;
 
     }
 
     .quienesomos h2 {
         font-size: 2rem;
+        line-height: 50px;
 
     }
 
