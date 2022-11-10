@@ -154,7 +154,6 @@ a:hover {
 }
 
 .quienesomos h2 {
-    /* font-family: 'Montserrat'; */
     font-weight: 400;
     font-size: 4rem;
     line-height: 98px;
@@ -162,7 +161,6 @@ a:hover {
     align-items: center;
     text-align: center;
     color: var(--green-dark);
-    mix-blend-mode: darken;
 }
 
 .quienesomos p {
@@ -593,7 +591,7 @@ hr {
 
     .content {
         /* display: none; */
-        top: 45% !important;
+        top: 50% !important;
         left: 11.5rem !important;
         font-size: 20px !important;
         line-height: 40px;
@@ -618,7 +616,12 @@ hr {
 
     .quienesomos p {
 
-        margin: 1rem;
+        margin: 0.5rem;
+
+    }
+
+    .quienesomos h2 {
+        font-size: 2rem;
 
     }
 
