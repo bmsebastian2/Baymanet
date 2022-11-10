@@ -8,10 +8,6 @@
     color: black;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 :root {
     --gray-dark: #3F3F3F;
     --gray-clear: #C0C0C0;
@@ -20,6 +16,12 @@ html {
     --white-dark: #F7F7F7;
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -35,7 +37,9 @@ header {
 
 }
 
-
+header button {
+    margin-top: 8rem;
+}
 
 nav {
     /* position: fixed; */
@@ -48,12 +52,12 @@ nav {
 
 }
 
-.containerhamburuesa {
-    display: none;
-}
-
 a:hover {
     color: var(--green-dark);
+}
+
+.containerhamburuesa {
+    display: none;
 }
 
 .div1 {
@@ -115,8 +119,6 @@ a:hover {
 
 }
 
-
-
 .headerRight {
     display: flex;
     align-items: center;
@@ -127,18 +129,18 @@ a:hover {
     height: 60vh;
 }
 
-.headerLeft button {
+.buttonGreenClear {
     font-size: 1.3rem;
     padding: 0.6rem 1.6rem 0.6rem 1.6rem;
     border-radius: 1rem;
     background-color: var(--green-clear);
-    margin-top: 8rem;
 
 }
 
-.headerLeft button:hover {
+.buttonGreenClear:hover {
     animation: myAnim 1.2s ease 0s 1 normal forwards;
 }
+
 
 .quienesomos {
     min-height: 80vh;
@@ -174,28 +176,63 @@ a:hover {
     text-align: center;
     color: var(--gray-dark);
     mix-blend-mode: darken;
+    margin: 0 5rem 0 5rem;
 
 }
 
 .quehacemos {
-    padding-top: 5rem;
+    padding: 5rem;
     min-height: 100vh;
     width: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(3, 1fr);
-    /* background-color: var(--white-dark); */
-
-
     background-image: url("./img/fonQuehacemos.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center top;
 
+}
+
+.bg-correo_electronico_vacio {
+    width: 50px;
+    height: 50px;
+    background: url(/img/css_sprites.png)-10px -10px;
+    filter: invert(100%);
+    margin: 1rem;
+
+}
+
+.bg-gps {
+    width: 50px;
+    height: 50px;
+    background: url(/img/css_sprites.png) -80px -10px;
+    filter: invert(100%);
+    margin: 1rem;
+}
+
+.bg-smartphone {
+    width: 33px;
+    height: 50px;
+    background: url(/img//css_sprites.png) -10px -80px;
+    filter: invert(100%);
+    margin: 1rem;
+}
 
 
+
+.iconHover:hover {
+    animation: myAnim 1.2s ease 0s 1 normal forwards;
+}
+
+
+.containerIcon {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    /* border: 1px solid red; */
 }
 
 /* .containerQuehacemos {
@@ -213,15 +250,14 @@ a:hover {
     opacity: 50%;
 
 } */
-
+/* 
 .quehacemos h4 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 1.8rem;
-    line-height: 59px;
-    color: var(--green-dark);
-}
+    color: red;
+} */
 
 .quehacemos p {
     font-family: 'Roboto';
@@ -249,16 +285,10 @@ a:hover {
 }
 
 .div3 h3 {
-
     font-weight: 700;
     font-size: 3.5rem;
-    line-height: 98px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: var(--gray-dark);
-    mix-blend-mode: darken;
-    margin-left: 4rem;
+
 }
 
 
@@ -320,8 +350,6 @@ a:hover {
 
 }
 
-
-
 .div8 {
     flex: 1;
     display: flex;
@@ -334,29 +362,109 @@ a:hover {
 }
 
 .beneficios {
-    min-height: 70vh;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #48CFCB 0%, rgba(72, 207, 203, 0) 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: linear-gradient(180deg, #48CFCB 0%, rgba(72, 207, 203, 0) 100%); */
+    background-color: var(--white-dark);
+    border: 2px solid rebeccapurple;
+    padding: 2.5rem;
+}
+
+.beneficiosContIcon {
+    width: 112px;
+    height: 112px;
+    margin: 1rem;
+}
+
+.bg-IconoDiseño {
+    background: url(/img/iconosBeneficios.png)-10px -142px;
+}
+
+.bg-IconoCumplimiento {
+
+    background: url(/img/iconosBeneficios.png) -142px -10px;
+}
+
+.bg-IconoTecnicos {
+
+    background: url(/img/iconosBeneficios.png) -142px -142px;
+}
+
+.bg-IconoAdministracion {
+
+    background: url(/img/iconosBeneficios.png) -10px -10px;
+}
+
+
+
+.beneficiosContainerImg {
+    display: flex;
+    align-items: center;
+
+
 }
 
 .beneficios h3 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
-    line-height: 72px;
-
-
+    font-size: clamp(1rem, -0.875rem + 8.333vh, 3.5rem);
     text-align: center;
     letter-spacing: -0.015em;
+    color: var(--gray-dark);
 
-    color: #F7F7F7;
+
 }
+
+.beneficios h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: var(--gray-dark);
+    margin: 3rem 3rem 1rem 3rem;
+}
+
+.beneficios p {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* or 113% */
+    color: var(--gray-dark);
+    text-align: center;
+    letter-spacing: -0.015em;
+}
+
+.div10 div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .div9 {
     flex: 1;
+    display: flex;
+    align-items: center;
+
 }
+
+.div9 h3 {
+    color: var(--green-dark);
+    font-size: clamp(1rem, -0.875rem + 8.333vh, 3.5rem);
+}
+
 
 .div10 {
     flex: 4;
@@ -366,6 +474,8 @@ a:hover {
 
 .div11 {
     flex: 1;
+
+
 }
 
 .div12 {
@@ -384,21 +494,89 @@ a:hover {
     min-height: 80vh;
     background-color: var(--gray-dark);
     display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactosCreateBy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    min-height: 20vh;
+    width: 100%;
+    margin-top: 30rem;
+    opacity: 50%;
+
+}
+
+.contactos h3, p {
+    color: var(--white-dark);
+    text-align: center;
+}
+
+.contactos h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+    text-align: center;
 }
 
 .div15 {
-    flex: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
 }
+
+.div15 h3 {
+    margin-bottom: 1rem;
+}
+
+hr {
+    opacity: 15%;
+}
+
 
 .div16 {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+    position: relative;
+    /* overflow: hidden; */
 }
 
+.div16_1 {
+    flex: 1;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    z-index: 10;
 
+}
+
+.div16_2 {
+    flex: 2;
+    z-index: 5;
+
+}
+
+.VectorLogo {
+    position: absolute;
+    left: 20rem;
+    top: 5rem;
+}
 
 /* QUERY */
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     header {
         min-height: 90vh;
         display: grid;
@@ -428,21 +606,16 @@ a:hover {
         line-height: 47px;
     }
 
-    .headerLeft button {
-        font-size: 1.1rem;
-        padding: 0.4rem 1.4rem 0.4rem 1.4em;
-        border-radius: 0.6rem;
-        background-color: var(--green-clear);
+
+    .quienesomos p {
+
+        margin: 1rem;
 
     }
 
     .headerRight img {
         height: 25vh;
     }
-
-
-
-
 
     .quehacemos {
         grid-template-columns: repeat(3, 1fr);
@@ -493,25 +666,58 @@ a:hover {
     }
 
     .contactos {
-        min-height: 60vh;
+        min-height: 90vh;
         display: flex;
         flex-direction: column;
     }
 
-    .div15 {
-        flex: 1;
-        background-color: black;
-        border:1px solid red;
+
+    .contactos {
+
+        flex-direction: column;
     }
 
     .div16 {
-        flex: 1;
-        background-color: white;
-        border:2px solid blue;
+        justify-content: flex-start;
     }
+
+    .contactosCreateBy {
+        /* min-height: 60vh; */
+        padding: 1rem;
+        min-height: 20vh;
+        width: 100%;
+        margin-top: 30rem;
+    }
+
+    .VectorLogo {
+        left: 10rem;
+        top: -8rem;
+    }
+
+
 
 }
 
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width: 769px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
+
+    .headerCable {
+        right: 30rem;
+
+    }
+
+    .wrapper {
+
+        width: 300px;
+        height: 400px;
+    }
+
+}
 
 .hamburger {
     position: fixed;
@@ -667,6 +873,8 @@ a:hover {
     font-size: 30px;
     line-height: 40px;
     color: #ecf0f1;
+
+
 }
 
 .content__container {
@@ -705,6 +913,12 @@ a:hover {
     display: inline;
     float: left;
     margin: 0;
+    color: var(--gray-dark);
+
+}
+
+span {
+    color: var(--green-clear)
 }
 
 .content__container__list {
@@ -869,7 +1083,6 @@ a:hover {
     }
 }
 
-
 .myBox {
     text-align: center;
     border-bottom: 2px solid transparent;
@@ -877,8 +1090,6 @@ a:hover {
     border-image-slice: 1;
     width: 100%;
 }
-
-
 
 .wrapper {
 
@@ -892,6 +1103,8 @@ a:hover {
     box-shadow: 0;
     transform: scale(0.95);
     transition: box-shadow 0.5s, transform 0.5s;
+    border: 2px solid var(--gray-dark);
+
 }
 
 .wrapper span {
