@@ -343,7 +343,7 @@ a:hover {
     align-items: center;
     text-align: center;
     background-color: var(--white-dark);
-    border: 2px solid rebeccapurple;
+
     padding: 2.5rem;
 }
 
@@ -443,6 +443,8 @@ a:hover {
     display: flex;
     flex-direction: row;
 }
+
+.borderBottom {}
 
 .div11 {
     flex: 1;
@@ -671,10 +673,36 @@ hr {
 
     }
 
-
     .div10 {
         flex: 8;
         flex-direction: column;
+    }
+
+    .div11 {
+
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+        border-image-slice: 1;
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .div12 {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+        border-image-slice: 1;
+        width: 100%;
+        padding-bottom: 3rem;
+
+    }
+
+    .div13 {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+        border-image-slice: 1;
+        width: 100%;
+        padding-bottom: 3rem;
+
     }
 
     .contactos {
@@ -1096,7 +1124,7 @@ span {
 }
 
 .myBox {
-    text-align: center;
+
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
     border-image-slice: 1;
