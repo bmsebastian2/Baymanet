@@ -342,7 +342,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background: linear-gradient(180deg, #48CFCB 0%, rgba(72, 207, 203, 0) 100%); */
     background-color: var(--white-dark);
     border: 2px solid rebeccapurple;
     padding: 2.5rem;
@@ -627,10 +626,9 @@ hr {
     }
 
     .div7 p {
-        font-size: 1.5rem;
-        line-height: 20px;
-        letter-spacing: -0.005em;
-        color: #c21313;
+        font-size: 1.7rem;
+        line-height: 35px;
+
 
     }
 
@@ -659,14 +657,18 @@ hr {
         flex-direction: column;
     }
 
+    .beneficios h4 {
+        font-size: 22px;
+    }
+
     .div9 {
         flex: 0.5;
     }
 
     .div9 h3 {
 
-        font-size: 1.2rem;
-        color: red;
+        font-size: 1.7rem;
+
     }
 
 
