@@ -255,7 +255,7 @@ a:hover {
     grid-area: 1 / 1 / 2 / 4;
     display: flex;
     align-items: center;
-    border: 1px solid black;
+
 }
 
 .div3 h3 {
@@ -435,7 +435,7 @@ a:hover {
 
 .div9 h3 {
     color: var(--green-dark);
-    font-size: clamp(1rem, -0.875rem + 8.333vh, 3.5rem);
+    font-size: 3rem;
 }
 
 
@@ -613,9 +613,9 @@ hr {
     }
 
     .div3 h3 {
-       
+
         font-size: 2.5rem;
-       
+
 
     }
 
@@ -626,6 +626,13 @@ hr {
 
     }
 
+    .div7 p {
+        font-size: 1.5rem;
+        line-height: 20px;
+        letter-spacing: -0.005em;
+        color: #c21313;
+
+    }
 
     .div2 {
 
@@ -654,6 +661,12 @@ hr {
 
     .div9 {
         flex: 0.5;
+    }
+
+    .div9 h3 {
+
+        font-size: 1.2rem;
+        color: red;
     }
 
 
