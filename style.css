@@ -56,6 +56,29 @@ a:hover {
     color: var(--green-dark);
 }
 
+
+.swichRj {
+    position: absolute;
+}
+
+.rjsmall {
+    display: none;
+    width: 108px;
+    height: 107px;
+    background: url(/img/RJ45_Sprites.png) -243px -10px;
+    top: 7%;
+    right: 60%;
+}
+
+.rjbig {
+    display: block;
+    width: 213px;
+    height: 211px;
+    background: url(/img/RJ45_Sprites.png) -10px -10px;
+    top: 7%;
+    right: 30%;
+}
+
 .containerhamburuesa {
     display: none;
 }
@@ -109,14 +132,7 @@ a:hover {
 
 }
 
-.headerCable {
-    position: absolute;
-    top: 4.8rem;
-    right: 37rem;
-    max-height: 30vh;
-    width: 14vw;
 
-}
 
 .headerRight {
     display: flex;
@@ -124,9 +140,20 @@ a:hover {
     justify-content: center;
 }
 
-.headerRight img {
+.headerLogo {
     height: 60vh;
 }
+
+/* 
+picture {
+
+    position: absolute;
+    top: 4.8rem;
+    right: 28rem;
+
+
+
+} */
 
 .buttonGreenClear {
     font-size: 1.3rem;
@@ -564,13 +591,21 @@ hr {
     }
 
 
+    .rjsmall {
+        display: block;
+    }
+
+    .rjbig {
+        display: none;
+    }
+
     .nav1 {
         display: none;
     }
 
     .content {
         /* display: none; */
-        top: 50% !important;
+        top: 45% !important;
         left: 11.5rem !important;
         font-size: 20px !important;
         line-height: 40px;
@@ -766,10 +801,6 @@ hr {
 /* // Large devices (desktops, less than 1200px) */
 @media (min-width: 1199.98px) {
 
-    .headerCable {
-        right: 30rem;
-
-    }
 
     .wrapper {
 
