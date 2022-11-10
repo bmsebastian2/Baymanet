@@ -66,7 +66,7 @@ a:hover {
     width: 108px;
     height: 107px;
     background: url(/img/RJ45_Sprites.png) -243px -10px;
-    top: 7%;
+    top: 8%;
     right: 60%;
 }
 
@@ -75,8 +75,8 @@ a:hover {
     width: 213px;
     height: 211px;
     background: url(/img/RJ45_Sprites.png) -10px -10px;
-    top: 7%;
-    right: 30%;
+    top: 13%;
+    right: 33%;
 }
 
 .containerhamburuesa {
@@ -605,7 +605,7 @@ hr {
 
     .content {
         /* display: none; */
-        top: 45% !important;
+        top: 48% !important;
         left: 11.5rem !important;
         font-size: 20px !important;
         line-height: 40px;
