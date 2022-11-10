@@ -582,6 +582,11 @@ hr {
         display: grid;
     }
 
+    header button {
+        margin-top: 3rem;
+    }
+
+
     .nav1 {
         display: none;
     }
@@ -601,9 +606,9 @@ hr {
     }
 
     .headerLeft h1 {
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 35px;
+        font-size: 1.8rem;
+        line-height: 32px;
+
     }
 
     .headerLeft h3 {
