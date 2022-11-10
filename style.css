@@ -233,36 +233,12 @@ a:hover {
     /* border: 1px solid red; */
 }
 
-/* .containerQuehacemos {
-    position: absolute;
-    min-height: 100vh;
-    width: 100%;
-    border: 1px solid red;
-}
-
-.quehacemosImagen {
-    position: relative;
-    left: -30rem;
-    top: 12rem;
-    z-index: 0;
-    opacity: 50%;
-
-} */
-/* 
-.quehacemos h4 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 1.8rem;
-    color: red;
-} */
-
 .quehacemos p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 1.2rem;
-    line-height: 29px;
+    /* line-height: 29px; */
     display: flex;
     align-items: center;
     text-align: center;
@@ -270,22 +246,25 @@ a:hover {
     padding: 0 1.2rem 0 1.2rem;
 }
 
+/* 
 .quehacemos img {
     width: 316px;
     height: 292px;
     border: 2px solid var(--gray-dark);
-}
+} */
 
 .div3 {
     grid-area: 1 / 1 / 2 / 4;
     display: flex;
     align-items: center;
+    border: 1px solid black;
 }
 
 .div3 h3 {
     font-weight: 700;
     font-size: 3.5rem;
     color: var(--gray-dark);
+    border: 1px solid red;
 
 }
 
@@ -634,6 +613,8 @@ hr {
     .quehacemos {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 0.5fr repeat(3, 1fr);
+        padding: 2rem;
+
     }
 
     .experiencias {
