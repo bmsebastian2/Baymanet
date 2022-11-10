@@ -593,8 +593,8 @@ hr {
 
     .content {
         /* display: none; */
-        top: 65%;
-        left: 12rem !important;
+        top: 85%;
+        left: 11rem !important;
         font-size: 20px !important;
         line-height: 40px;
 
@@ -612,8 +612,7 @@ hr {
     }
 
     .headerLeft h3 {
-        font-size: 1.1rem;
-        line-height: 47px;
+        display: none;
     }
 
 
