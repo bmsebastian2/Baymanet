@@ -66,8 +66,8 @@ a:hover {
     width: 108px;
     height: 107px;
     background: url(/img/RJ45_Sprites.png) -243px -10px;
-    top: 8%;
-    right: 60%;
+    top: 12%;
+    right: 66%;
 }
 
 .rjbig {
@@ -75,7 +75,7 @@ a:hover {
     width: 213px;
     height: 211px;
     background: url(/img/RJ45_Sprites.png) -10px -10px;
-    top: 13%;
+    top: 16%;
     right: 33%;
 }
 
