@@ -372,14 +372,13 @@ a:hover {
     background: url(/img/iconosBeneficios.png) -10px -10px;
 }
 
-
-
 .beneficiosContainerImg {
     display: flex;
     align-items: center;
 
-
 }
+
+
 
 .beneficios h3 {
     font-family: 'Montserrat';
@@ -444,7 +443,11 @@ a:hover {
     flex-direction: row;
 }
 
-.borderBottom {}
+.div10 p {
+    margin: 1rem;
+}
+
+
 
 .div11 {
     flex: 1;
@@ -509,6 +512,7 @@ a:hover {
 
 .div15 h3 {
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 hr {
@@ -707,7 +711,7 @@ hr {
     }
 
     .contactos {
-        min-height: 125vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -727,12 +731,16 @@ hr {
 
     }
 
+    .containerIcon {
+        margin: 0.5rem;
+    }
+
     .contactosCreateBy {
         /* min-height: 60vh; */
         padding: 1rem;
         min-height: 40vh;
         width: 100%;
-        margin-top: 28rem;
+        margin-top: 19rem;
     }
 
     .contactosCreateBy p {
@@ -745,8 +753,9 @@ hr {
         top: -8rem;
     }
 
-
-
+    .iconoSoyunaWeb {
+        display: none;
+    }
 }
 
 
