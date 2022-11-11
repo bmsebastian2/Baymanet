@@ -1223,6 +1223,7 @@ span {
 
 .details .myBox h2 {
     color: var(--gray-dark);
+    text-align: center;
 
 }
 
@@ -1259,7 +1260,9 @@ span {
 
 .wrapper .inside {
     z-index: 9;
-    background: var(--green-dark);
+    /* background: var(--green-dark); */
+    background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);
+
     width: 140px;
     height: 140px;
     position: absolute;
@@ -1316,7 +1319,8 @@ span {
 }
 
 .wrapper .inside .contents p {
-    font-size: 13px;
+    font-size: 1rem;
+    color: var(--gray-dark);
 }
 
 
