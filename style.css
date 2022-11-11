@@ -457,6 +457,7 @@ a:hover {
     margin-top: 29rem;
     opacity: 50%;
 
+
 }
 
 .contactos h3, p {
@@ -727,6 +728,7 @@ hr {
         min-height: 40vh;
         width: 100%;
         margin-top: 19rem;
+        z-index: 1000;
     }
 
     .contactosCreateBy p {
