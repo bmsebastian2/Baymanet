@@ -123,6 +123,7 @@ a:hover {
     font-weight: 300;
     line-height: 47px;
     letter-spacing: -0.04em;
+    color: var(--gray-dark);
 
 }
 
@@ -165,6 +166,7 @@ a:hover {
     justify-content: space-around;
     padding: 2rem 5rem 2rem 5rem;
 
+
 }
 
 .quienesomos h2 {
@@ -187,10 +189,11 @@ a:hover {
     align-items: center;
     text-align: center;
     color: var(--gray-dark);
-    mix-blend-mode: darken;
-    margin: 0 5rem 0 5rem;
+    margin: 10rem 5rem 10rem 5rem;
 
 }
+
+
 
 .quehacemos {
     padding: 5rem;
@@ -200,7 +203,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(3, 1fr);
-
+    border: 1px soid red;
 
 
 }
@@ -567,9 +570,17 @@ hr {
         display: none;
     }
 
+    .quienesomos {
+        min-height: 80vh;
+        padding: 0.2rem 2rem 0.2rem 2rem;
+        justify-content: center;
+
+
+    }
+
 
     .quienesomos p {
-
+        font-size: 1.5rem;
         margin: 0.5rem;
         line-height: 35px;
 
@@ -1117,7 +1128,7 @@ span {
 
     width: 350px;
     height: 550px;
-    background: white;
+    background: var(--white-dark);
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -1198,10 +1209,26 @@ span {
 }
 
 .wrapper .container .bottom .left .details {
-    padding: 20px;
+    padding: 10px;
     float: left;
     width: calc(70% - 40px);
 }
+
+.details .myBox {
+    margin-bottom: 0.4rem;
+
+}
+
+.details .myBox h2 {
+    color: var(--gray-dark);
+
+}
+
+.details span {
+
+    color: var(--gray-dark)
+}
+
 
 .wrapper .container .bottom .left .buy {
     float: right;
@@ -1387,4 +1414,14 @@ span {
     background: url(/img//css_sprites.png) -10px -80px;
     filter: invert(100%);
     margin: 1rem;
+}
+
+
+.tope {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+}
+
+.bottome {
+    clip-path: polygon(0 50px, 100% 0, 100% 100%, 0 100%);
+    margin-top: -47px;
 }
