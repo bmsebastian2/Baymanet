@@ -132,8 +132,6 @@ a:hover {
 
 }
 
-
-
 .headerRight {
     display: flex;
     align-items: center;
@@ -144,16 +142,6 @@ a:hover {
     height: 60vh;
 }
 
-/* 
-picture {
-
-    position: absolute;
-    top: 4.8rem;
-    right: 28rem;
-
-
-
-} */
 
 .buttonGreenClear {
     font-size: 1.3rem;
@@ -212,38 +200,20 @@ picture {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(3, 1fr);
-    background-image: url("./img/fonQuehacemos.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center top;
+
+
 
 }
 
-.bg-correo_electronico_vacio {
-    width: 50px;
-    height: 50px;
-    background: url(/img/css_sprites.png)-10px -10px;
-    filter: invert(100%);
-    margin: 1rem;
-
-}
-
+/* .bg-correo_electronico_vacio {} */
+/* 
 .bg-gps {
-    width: 50px;
-    height: 50px;
-    background: url(/img/css_sprites.png) -80px -10px;
-    filter: invert(100%);
-    margin: 1rem;
-}
-
+    
+} */
+/* 
 .bg-smartphone {
-    width: 33px;
-    height: 50px;
-    background: url(/img//css_sprites.png) -10px -80px;
-    filter: invert(100%);
-    margin: 1rem;
-}
+
+} */
 
 
 
@@ -271,12 +241,7 @@ picture {
     padding: 0 1.2rem 0 1.2rem;
 }
 
-/* 
-.quehacemos img {
-    width: 316px;
-    height: 292px;
-    border: 2px solid var(--gray-dark);
-} */
+
 
 .div3 {
     grid-area: 1 / 1 / 2 / 4;
@@ -326,10 +291,6 @@ picture {
     width: 100%;
     display: flex;
     padding: 6rem 3rem 6rem 3rem;
-    background-image: url('./img//Experiencia.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
 
 }
 
@@ -380,31 +341,11 @@ picture {
     margin: 1rem;
 }
 
-.bg-IconoDiseño {
-    background: url(/img/iconosBeneficios.png)-10px -142px;
-}
-
-.bg-IconoCumplimiento {
-
-    background: url(/img/iconosBeneficios.png) -142px -10px;
-}
-
-.bg-IconoTecnicos {
-
-    background: url(/img/iconosBeneficios.png) -142px -142px;
-}
-
-.bg-IconoAdministracion {
-
-    background: url(/img/iconosBeneficios.png) -10px -10px;
-}
-
 .beneficiosContainerImg {
     display: flex;
     align-items: center;
 
 }
-
 
 
 .beneficios h3 {
@@ -415,7 +356,6 @@ picture {
     text-align: center;
     letter-spacing: -0.015em;
     color: var(--gray-dark);
-
 
 }
 
@@ -578,7 +518,7 @@ hr {
     top: 5rem;
 }
 
-/* QUERY */
+
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     header {
@@ -793,26 +733,17 @@ hr {
     }
 }
 
-
-
-/* // Medium devices (tablets, less than 992px) */
-@media (min-width: 769px) {}
-
-/* // Large devices (desktops, less than 1200px) */
 @media (min-width: 1199.98px) {
-
 
     .wrapper {
 
         width: 300px;
         height: 400px;
     }
-
 }
 
 .hamburger {
     position: fixed;
-    /* background-color: transparent; */
     left: 40vw;
     top: 0;
     height: 30px;
@@ -1216,17 +1147,9 @@ span {
     height: 100%;
 }
 
-.wrapper .container .top {
-    height: 80%;
-    width: 100%;
-    background: url(/img/cableado.png) no-repeat center center;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-}
 
-.wrapper .container .top2 {
+
+/* .wrapper .container .top2 {
     height: 80%;
     width: 100%;
     background: url(/img/camaras.png) no-repeat center center;
@@ -1234,9 +1157,9 @@ span {
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-}
+} */
 
-.wrapper .container .top3 {
+/* .wrapper .container .top3 {
     height: 80%;
     width: 100%;
     background: url(/img/redes.png) no-repeat center center;
@@ -1244,7 +1167,7 @@ span {
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-}
+} */
 
 .wrapper .container .bottom {
     width: 200%;
@@ -1365,4 +1288,103 @@ span {
 
 .wrapper .inside .contents p {
     font-size: 13px;
+}
+
+
+
+.setVisible {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: .7s ease-in-out all;
+}
+
+.offVisible {
+    opacity: 1;
+    transform: scale(1)
+}
+
+
+
+
+.visible0 {
+    background-image: url("./img/fonQuehacemos.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.visible1 {
+    background: url(/img/cableado.png) no-repeat center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 100%;
+}
+
+.visible2 {
+    background: url(/img/camaras.png) no-repeat center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 100%;
+
+}
+
+.visible3 {
+    background: url(/img/redes.png) no-repeat center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 100%;
+}
+
+.visible4 {
+    background-image: url('./img//Experiencia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.visible5 {
+    background: url(/img/iconosBeneficios.png)-10px -142px;
+}
+
+.visible6 {
+    background: url(/img/iconosBeneficios.png) -142px -10px;
+}
+
+.visible7 {
+    background: url(/img/iconosBeneficios.png) -142px -142px;
+}
+
+.visible8 {
+    background: url(/img/iconosBeneficios.png) -10px -10px;
+}
+
+
+.visible9 {
+    width: 50px;
+    height: 50px;
+    background: url(/img/css_sprites.png)-10px -10px;
+    filter: invert(100%);
+    margin: 1rem;
+}
+
+.visible10 {
+    width: 50px;
+    height: 50px;
+    background: url(/img/css_sprites.png) -80px -10px;
+    filter: invert(100%);
+    margin: 1rem;
+}
+
+.visible11 {
+    width: 33px;
+    height: 50px;
+    background: url(/img//css_sprites.png) -10px -80px;
+    filter: invert(100%);
+    margin: 1rem;
 }
