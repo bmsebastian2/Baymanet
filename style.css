@@ -576,7 +576,6 @@ hr {
         padding: 0.2rem 2rem 0.2rem 2rem;
         justify-content: center;
 
-
     }
 
 
@@ -753,6 +752,25 @@ hr {
         width: 300px;
         height: 400px;
     }
+
+    .contactosCreateBy {
+        min-height: 40vh;
+        margin-top: 30rem;
+
+    }
+
+    .VectorLogo {
+        left: 25rem;
+        top: 25rem;
+    }
+
+    .div16_1 {
+        align-items: flex-end;
+
+    }
+
+
+
 }
 
 .hamburger {
