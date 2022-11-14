@@ -5,11 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Servicio de diseño y cableado estructurado" />
+    <meta name="keywords" content="cableado estructurado, soporte, cableado" />
+    <meta name="author" content="Sebastian Benitez/">
+    <meta name="copyright" content="SoyunaWeb" />
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <title>Cableado estructurado</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="/stylecableadoestructurado.css">
+
 </head>
 
 <body>
-    cableado
+    <header>
+
+        <div class="div1">
+            <nav class="nav1">
+
+                <a href="/index.html" class="menu-link aniStart  setVisible">Inicio</a>
+                <a href="/index.html#0" class="menu-link aniStart  setVisible">Qué hacemos</a>
+                <a href="/index.html#quienesomos" class="menu-link aniStart  setVisible">Quiénes somos</a>
+                <a href="/index.html#paracontactar" class="menu-link aniStart  setVisible">Contáctanos</a>
+
+            </nav>
+            <div class="containerhamburuesa">
+                <div class="hamburger">
+                    <div class="_layer -top"></div>
+                    <div class="_layer -mid"></div>
+                    <div class="_layer -bottom"></div>
+                </div>
+                <nav class="menuppal">
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/index.html#0">Que hacemos</a></li>
+                        <li><a href="/index.html#quienesomos">Quienes somos</a></li>
+                        <li><a href="/index.html#paracontactar">Contáctanos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+
+
+
+    </header>
+    <main>
+        <section>
+
+        </section>
+    </main>
+    <script>
+
+        // selector
+        var menu = document.querySelector(".hamburger");
+
+        // method
+        function toggleMenu(event) {
+            this.classList.toggle("is-active");
+            document.querySelector(".menuppal").classList.toggle("is_active");
+            event.preventDefault();
+        }
+
+        // event
+        menu.addEventListener("click", toggleMenu, false);
+
+    </script>
 </body>
 
 </html>
