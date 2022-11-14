@@ -1,6 +1,4 @@
-console.log("hola");
 const objAnimados = [].slice.call(document.querySelectorAll(".aniStart"));
-console.log(objAnimados);
 
 const cargarImagen = (entradas, obervador) => {
   entradas.forEach((entrada) => {
@@ -18,13 +16,10 @@ const observador = new IntersectionObserver(cargarImagen, {
 });
 objAnimados.forEach((e) => observador.observe(e));
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
 
-  let i = 0;
+
   if ("IntersectionObserver" in window) {
     let lazyBackgroundObserver = new IntersectionObserver(function (
       entries,
@@ -32,8 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          entry.target.classList.add(`visible${i}`);
-          i++;
+          entry.target.classList.add(`visible${entry.target.id}`);
           lazyBackgroundObserver.unobserve(entry.target);
         }
       });
@@ -45,16 +39,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
 // selector
-var menu = document.querySelector('.hamburger');
+var menu = document.querySelector(".hamburger");
 
 // method
-function toggleMenu (event) {
-  this.classList.toggle('is-active');
-  document.querySelector( ".menuppal" ).classList.toggle("is_active");
+function toggleMenu(event) {
+  this.classList.toggle("is-active");
+  document.querySelector(".menuppal").classList.toggle("is_active");
   event.preventDefault();
 }
 
 // event
-menu.addEventListener('click', toggleMenu, false);
+menu.addEventListener("click", toggleMenu, false);
