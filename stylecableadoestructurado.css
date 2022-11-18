@@ -30,90 +30,13 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     width: 100%;
-
-
-}
-
-.div1 {
-
-    flex: 0.5;
-    background-color: var(--white-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red
-}
-
-.div2 {
-    flex: 4;
-    display: flex;
-    border: 1px solid blue;
-}
-
-.div2_left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    text-align: center;
-    border: 2px solid green;
-}
-
-.div2_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: var(--green-dark)
-}
-
-.div2_left p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    /* or 200% */
-    text-align: center;
-    letter-spacing: -0.015em;
-}
-
-.div2_right {
-    flex: 1;
-}
-
-.inversionSegura {
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
-}
-
-.inversionSegura h2 {
-    color: var(--green-dark);
-    margin-bottom: 2.5rem;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 4fr;
 
 }
-
-.inversionSegura p {
-    margin-bottom: 0.5rem;
-
-}
-
-
 
 header button {
     margin-top: 8rem;
@@ -130,7 +53,6 @@ nav {
 
 }
 
-
 a:hover {
     color: var(--green-dark);
 }
@@ -139,13 +61,20 @@ a:hover {
     display: none;
 }
 
-
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: var(--white-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .div2 {
-        flex-direction: column;
+    header {
+        min-height: 90vh;
+        display: grid;
     }
 
     header button {
@@ -158,25 +87,6 @@ a:hover {
 
     .nav1 {
         display: none;
-    }
-
-
-    .div2_left p {
-        font-size: 1.2rem;
-        line-height: 40px;
-        /* or 200% */
-
-        text-align: center;
-        letter-spacing: -0.015em;
-    }
-
-    .div2_right img {
-        width: 95vw;
-        height: 30vh;
-    }
-
-    .inversionSegura {
-        text-align: justify;
     }
 }
 
