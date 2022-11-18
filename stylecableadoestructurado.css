@@ -29,29 +29,71 @@ body {
 
 }
 
+
 header {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    position: relative;
+
+}
+
+.logoHeader {
+    top: 1vh;
+    left: 75vw;
+    position: absolute;
+
+}
+
+/* .containerFloat {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+
+} */
+
+.imagenCabezera {
+    min-height: 40vh;
+    width: 100%;
+    overflow: hidden;
 
 
 }
 
-.div1 {
+picture img {
+    min-height: 100%;
+    width: 100%;
+}
 
-    flex: 0.5;
+span {
+    color: var(--gray-dark);
+    font-weight: bold;
+}
+
+.div1 {
+    padding: 1.5rem;
     background-color: var(--white-dark);
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red
 }
+
+.myBox {
+
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 249, 34), rgba(255, 0, 128), rgba(56, 2, 155, 0));
+    border-image-slice: 1;
+    width: 35%;
+}
+
 
 .div2 {
     flex: 4;
     display: flex;
-    border: 1px solid blue;
+    margin-top: 10rem;
+    padding: 2rem;
 }
 
 .div2_left {
@@ -62,7 +104,6 @@ header {
     align-items: center;
     padding: 1rem;
     text-align: center;
-    border: 2px solid green;
 }
 
 .div2_right {
@@ -104,7 +145,8 @@ h1 {
 .inversionSegura h2 {
     color: var(--green-dark);
     margin-bottom: 2.5rem;
-    
+
+
 
 }
 
@@ -144,8 +186,33 @@ a:hover {
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    header {
+        margin-top: 3rem;
+    }
+
+    .imagenCabezera {
+        min-height: 50vh;
+        padding: 0.8rem;
+
+    }
+
+    .logoHeader {
+        display: none;
+
+    }
+
+
+    picture img {
+        min-height: 80%;
+        width: 100%;
+    }
+
     .div2 {
         flex-direction: column;
+
+        margin-top: 0rem;
+
     }
 
     header button {
@@ -163,7 +230,7 @@ a:hover {
 
     .div2_left p {
         font-size: 1.2rem;
-        line-height: 40px;
+        line-height: 25px;
         /* or 200% */
 
         text-align: center;
@@ -171,13 +238,20 @@ a:hover {
     }
 
     .div2_right img {
-        width: 95vw;
+        width: 80vw;
         height: 30vh;
     }
 
     .inversionSegura {
         text-align: justify;
     }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+    }
+
 }
 
 
