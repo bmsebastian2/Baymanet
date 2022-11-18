@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+<<<<<<< HEAD
+
+=======
 // selector
 var menu = document.querySelector(".hamburger");
 
@@ -51,3 +54,4 @@ function toggleMenu(event) {
 
 // event
 menu.addEventListener("click", toggleMenu, false);
+>>>>>>> 67c4060ebd20ef21265d38314a3091022b04b082
