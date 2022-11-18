@@ -5,11 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Servicio de diseño y cableado estructurado" />
+    <meta name="keywords" content="cableado estructurado, soporte, cableado" />
+    <meta name="author" content="Sebastian Benitez/">
+    <meta name="copyright" content="SoyunaWeb" />
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <title>Cableado estructurado</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="/stylecableadoestructurado.css">
+
 </head>
 
 <body>
-    cableado
+
+
+    <header>
+
+        <div class="div1">
+            <nav class="nav1">
+
+                <a href="/index.html" class="menu-link aniStart  setVisible">Inicio</a>
+                <a href="/index.html#0" class="menu-link aniStart  setVisible">Qué hacemos</a>
+                <a href="/index.html#quienesomos" class="menu-link aniStart  setVisible">Quiénes somos</a>
+                <a href="/index.html#paracontactar" class="menu-link aniStart  setVisible">Contáctanos</a>
+
+            </nav>
+            <div class="containerhamburuesa">
+                <div class="hamburger">
+                    <div class="_layer -top"></div>
+                    <div class="_layer -mid"></div>
+                    <div class="_layer -bottom"></div>
+                </div>
+                <nav class="menuppal">
+                    <ul>
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/index.html#0">Que hacemos</a></li>
+                        <li><a href="/index.html#quienesomos">Quienes somos</a></li>
+                        <li><a href="/index.html#paracontactar">Contáctanos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="div2_left">
+                <h1>Servicios prestados por Networking Team.</h1>
+                <p>BAYMANET le hace el diseño de su red de cableado estructurado ya sea con fibra óptica o cable UTP de
+                    acuerdo a la
+                    normativa vigente.
+                    Además, evaluamos el estado de su red actual, entregando un informe de la auditoría realizada.</p>
+            </div>
+            <div class="div2_right">
+                <div>
+                    <img src="./img/diagramaCableado.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+
+    <main>
+        <section class="inversionSegura">
+            
+            <div>
+                <h2>Una inversión segura</h2>
+            </div>
+            
+            <div>
+                <div>
+                    <p>La calidad de la infraestructura de cableado y data center se ha convertido en el pilar que
+                        sustenta las inversiones en tecnología de la información y comunicaciones de las organizaciones.
+                    </p>
+                </div>
+                <div>
+                    <p>Brindamos soluciones de cableado estructurado, energía segura y data center, desde la etapa de diseño hasta la
+                    instalación, certificación y validación.
+                    </p>
+                </div>
+                <div>
+                    <p>Nos apoyamos en marcas de primera línea en la industria y brindamos garantías durante la vida útil las instalaciones.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <script>
+
+        // selector
+        var menu = document.querySelector(".hamburger");
+
+        // method
+        function toggleMenu(event) {
+            this.classList.toggle("is-active");
+            document.querySelector(".menuppal").classList.toggle("is_active");
+            event.preventDefault();
+        }
+
+        // event
+        menu.addEventListener("click", toggleMenu, false);
+
+    </script>
 </body>
 
 </html>
